@@ -43,12 +43,3 @@ fi
 # Load up new bash profile
 echo "Loading Bash Profile"
 source ~/.bash_profile
-
-if [ ! -d "$HOME/.vim/bundle/vundle" ]; then
-	git clone https://github.com/gmarik/vundle.git "$HOME/.vim/bundle/vundle"
-	vim -u "$HOME/.vimrc.bundles" +BundleInstall! +BundleClean +qall
-fi
-
-# Update Local Vim Settings
-echo "Updating local vim setings"
-vim +BundleInstall! +BundleClean +qall

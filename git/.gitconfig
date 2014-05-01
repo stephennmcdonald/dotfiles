@@ -1,6 +1,6 @@
 [user]
-	name = James Tomasino
-	email = james@tomasino.org
+	name = Stephen McDonald
+	email = stephennmcdonald@gmail.com
 [core]
 	whitespace = trailing-space, space-before-tab
 	excludesfile = ~/.gitignore_global
@@ -58,7 +58,7 @@
 	untracked = cyan
 
 [github]
-	user = jamestomasino
+	user = stephennmcdonald
 
 [alias]
 
@@ -106,7 +106,7 @@
 	ll = log --graph --date=short
 
 	# git flow
-	fs = !git flow feature start 
+	fs = !git flow feature start
 	ff = !git flow feature finish $1 && git pull && git push && echo
 
 	# from https://git.wiki.kernel.org/index.php/Aliases
@@ -276,7 +276,7 @@
 
 	# http://superuser.com/a/169696
 	# prettier than my version of this
-	#  doesn't really work, should probably use git for-each-ref 
+	#  doesn't really work, should probably use git for-each-ref
 	#heads = !"git log origin/master.. --format='%Cred%h%Creset;%C(yellow)%an%Creset;%H;%Cblue%f%Creset' | git name-rev --stdin --always --name-only | column -t -s';'"
 
 	pconfig = config -f .git/config

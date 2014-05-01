@@ -29,10 +29,6 @@ alias cl="fc -e -| pbcopy" # copy output of last command to clipboard
 alias cpwd='pwd|tr -d "\n"|pbcopy' # copy working directory path to clipboard
 alias chess='cd ~ && /Applications/Chess.app/Contents/Resources/sjeng.ChessEngine && rm *.lrn && cd -'
 
-# vim
-alias vime='vim -u ~/.vimrc.encryption.local -x'
-alias vimr='vim -u NONE'
-
 # git
 alias gs="git status"
 alias gb="git branch"
@@ -58,6 +54,3 @@ alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true
 alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-
-# julia language
-alias julia="exec '/Applications/Julia-0.2.0.app/Contents/Resources/julia/bin/julia'"

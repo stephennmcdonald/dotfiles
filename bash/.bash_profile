@@ -3,7 +3,7 @@
 ###############################################################################
 
 # vars
-export EDITOR="vim"
+export EDITOR="sublime"
 export HISTCONTRAL=ignoredups
 export HISTFILESIZE=10000
 export HISTZIE=10000
@@ -90,11 +90,6 @@ if [ -f "$HOME/bin/.git-flow-completion.sh" ] ; then
     source $HOME/bin/.git-flow-completion.sh
 fi
 
-# allow for .bash_local overrides
-if [ -f "$HOME/.bash_local" ] ; then
-    . ~/.bash_local
-fi
-
 ###############################################################################
 ##################################### scripts #################################
 ###############################################################################
@@ -120,3 +115,8 @@ if [ -f "$HOME/.bashrc" ] ; then
 fi
 
 # vim: set sw=4 ts=4 sts=4 et tw=78 nospell:
+
+# allow for .bash_local overrides
+if [ -f "$HOME/.bash_local" ] ; then
+    . ~/.bash_local
+fi

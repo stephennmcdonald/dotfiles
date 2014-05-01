@@ -97,3 +97,6 @@ com_crashlytics_export_strings.xml
 
 # Dropbox #
 .dropbox
+
+# internal
+_internal/
