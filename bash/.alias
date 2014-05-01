@@ -37,6 +37,7 @@ alias gap="git add -p"
 # tmux
 alias tmux='tmux -2'
 alias resume='tmux a'
+alias t='tmux attach || tmux new'
 
 # ip addresses
 alias flushdns='dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
@@ -54,3 +55,37 @@ alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true
 alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+
+# ------------------------------------------------------------------------------------------------------------------------
+
+#
+alias edit="sublime ."
+
+# git
+alias ga="git add -A"
+alias gm="git mergetool"
+alias gc="git commit -m"
+alias gca="git commit -am"
+alias gs="git status"
+alias gb="git branch"
+alias gr="git remote"
+alias gco="git checkout"
+alias gp="git pull && git push"
+
+# alias gcap="git commit -am $1 && gp && echo"
+
+function gcap() {
+
+	git commit -am "$1" && gp
+}
+
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
+
+alias work="cd ~/Sites/Git && ls -ld */ | awk '{print(\$10)}'"
+alias gd="bundle exec guard"
+
+# alias GSWSTAGING='git pull && build && release && cd rsync/ && rsync -rvO --progress . smcdonald@gsw-w.com:/var/www/sites/staging.gsw-w.com && cd ..'
+
+# ------------------------------------------------------------------------------------------------------------------------

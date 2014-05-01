@@ -1,6 +1,6 @@
 set completion-ignore-case on
 set bell-style none
-set editing-mode vi
+# set editing-mode vi
 set expand-tilde on
 set convert-meta off
 set input-meta on
