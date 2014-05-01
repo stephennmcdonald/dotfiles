@@ -14,6 +14,12 @@ function trimspace() {
 ################################## FUNCTIONS ###################################
 ################################################################################
 
+# git add, commit, pull, push at once
+function gcap() {
+
+	git commit -am "$1" && gp
+}
+
 # basic todo list
 function todo {
 	: ${TODO:?"TODO ENV Var not set"}
@@ -40,7 +46,7 @@ function todos {
 	#local m=$(trimspace $(git diff --numstat 2> /dev/null | wc -l))
 	LOCAL_DIR=$(git rev-parse --show-toplevel 2> /dev/null)
 	LOCAL_DIR=${LOCAL_DIR:-.}
-	find ${LOCAL_DIR} -type f -exec grep -H -n '(TODO|FIX(ME)?):' {} \; 2> /dev/null 
+	find ${LOCAL_DIR} -type f -exec grep -H -n '(TODO|FIX(ME)?):' {} \; 2> /dev/null
 }
 
 # jump to root folder of git repo
@@ -183,7 +189,7 @@ gitpullall() {
 }
 
 # Swap 2 filenames around, if they exist
-function swap() { 
+function swap() {
     local TMPFILE=tmp.$$
 
     [ $# -ne 2 ] && echo "swap: 2 arguments needed" && return 1
@@ -225,7 +231,7 @@ function hr() {
 	else
 		space_character='='
 	fi
-	
+
 	for i in $(seq 1 $(tput cols));
 	do
 		echo -n "${space_character}";
