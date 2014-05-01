@@ -75,6 +75,9 @@ alias gp="git pull && git push"
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
+# lock
+alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+
 
 alias work="cd ~/Sites/Git && ls -ld */ | awk '{print(\$10)}'"
 alias gd="bundle exec guard"
