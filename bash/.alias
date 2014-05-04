@@ -58,9 +58,6 @@ alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false &
 
 # ------------------------------------------------------------------------------------------------------------------------
 
-#
-alias edit="sublime ."
-
 # git
 alias ga="git add -A"
 alias gm="git mergetool"
@@ -77,13 +74,20 @@ alias whois="whois -h whois-servers.net"
 
 # lock
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
-
 alias ss='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 
 
 alias work="cd ~/Sites/Git && ls -ld */ | awk '{print(\$10)}'"
+=======
+# work related
+alias edit="sublime ."
+alias work="cd ~/Sites/Git && ls -ld */"
+#alias work="cd ~/Sites/Git && ls -ld */ | awk '{print(\$10)}'"
 alias gd="bundle exec guard"
 
-# alias GSWSTAGING='git pull && build && release && cd rsync/ && rsync -rvO --progress . smcdonald@gsw-w.com:/var/www/sites/staging.gsw-w.com && cd ..'
+# various
+alias mytop='top -s1 -o cpu -R -F'
+
+# alias GSWSTAGING='git pull && build && release && cd rsync/ && rsync -rvO --progress . smcdonald@gsw-w.com:/var/www/sites/ && cd ..'
 
 # ------------------------------------------------------------------------------------------------------------------------

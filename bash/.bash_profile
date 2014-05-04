@@ -56,6 +56,7 @@ PATH=${PATH}:${ANDROID_HOME}/tools
 PATH=${PATH}:${ANDROID_HOME}/platform-tools
 PATH=${PATH}:/Library/Frameworks/Python.framework/Versions/Current/bin
 PATH=${PATH}:~/.rvm/gems/ruby-1.9.3-p484/bin
+PATH=${PATH}:/usr/local/heroku/bin
 
 # options
 shopt -s cdspell
@@ -124,3 +125,17 @@ fi
 if [ -f "$HOME/.bash_local" ] ; then
     . ~/.bash_local
 fi
+
+# COLOR RULES
+# Attribute codes (ATTR):
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+#
+# Text color codes (TEXT):
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+#
+# Background color codes (BG):
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+#
+# Format: "\033[ATTR;TEXT;BGm]" (The last "m" is important)
+#
+# For a color list, run ./colors

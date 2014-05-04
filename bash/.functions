@@ -20,6 +20,11 @@ function gcap() {
 	git commit -am "${*:1}" && gp
 }
 
+# change title of current window
+function title {
+    echo -ne "\033]0;"$*"\007"
+}
+
 # basic todo list
 function todo {
 	: ${TODO:?"TODO ENV Var not set"}
