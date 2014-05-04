@@ -76,9 +76,6 @@ alias whois="whois -h whois-servers.net"
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 alias ss='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 
-
-alias work="cd ~/Sites/Git && ls -ld */ | awk '{print(\$10)}'"
-=======
 # work related
 alias edit="sublime ."
 alias work="cd ~/Sites/Git && ls -ld */"
