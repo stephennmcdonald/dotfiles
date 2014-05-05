@@ -57,6 +57,12 @@ PATH=${PATH}:${ANDROID_HOME}/platform-tools
 PATH=${PATH}:/Library/Frameworks/Python.framework/Versions/Current/bin
 PATH=${PATH}:~/.rvm/gems/ruby-1.9.3-p484/bin
 PATH=${PATH}:/usr/local/heroku/bin
+PATH=${PATH}:"/usr/local/bin:/usr/local/sbin:usr/local/lib:/usr/local/mysql/bin:/usr/local/bin/npm:$PATH"
+PATH=${PATH}:~
+
+NODE_PATH="/usr/local/bin:/usr/local/lib/node_modules"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # options
 shopt -s cdspell
