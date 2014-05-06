@@ -81,6 +81,7 @@ alias edit="sublime ."
 alias work="cd ~/Sites/Git && ls -ld */"
 #alias work="cd ~/Sites/Git && ls -ld */ | awk '{print(\$10)}'"
 alias gd="bundle exec guard"
+alias t='tmux attach || tmux new'
 
 # various
 alias mytop='top -s1 -o cpu -R -F'
