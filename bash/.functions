@@ -17,7 +17,7 @@ function trimspace() {
 # git add, commit, pull, push at once
 function gcap() {
 
-	git commit -am "${*:1}" && gp
+	git commit -am "${*:1}" && git pull && git push
 }
 
 # change title of current window
