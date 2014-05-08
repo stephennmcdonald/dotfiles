@@ -14,7 +14,7 @@ function trimspace() {
 ################################## FUNCTIONS ###################################
 ################################################################################
 
-# git add, commit, pull, push at once
+# git add, commit, pull, and push at once
 function gcap() {
 
 	git add -A && git commit -m "${*:1}" && git pull && git push
