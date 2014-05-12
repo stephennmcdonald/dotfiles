@@ -10,6 +10,15 @@ set visible-stats on
 set mark-symlinked-directories on
 set skip-completed-text on
 
+# when completing case will not be taken into consideration
+set completion-ignore-case on
+
+# With this enabled, underscores and hyphens are treated equally when completing, which is a plus to me because I find hyphens a lot easier to type
+set completion-map-case on
+
+# supposedly shows completions as a vertical list but does not seem to work (possibly zshell?)
+set print-completions-horizontally off
+
 # Use the string that has already been typed as the prefix for searching
 # through commands (i.e. more intelligent Up/Down-arrow behavior)
 "\e[B": history-search-forward
