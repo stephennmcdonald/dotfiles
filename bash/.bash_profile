@@ -30,9 +30,9 @@ export USER_COLOR="\033[38;05;130m"
 export HOST_COLOR="\033[38;05;130m"
 export RESET_COLOR="\033[m"
 
-export COLOR_GREEN="\[\033[0;32m\]"
+export COLOR_GREEN="\033[0;32m"
 export COLOR_GRAY="\033[38;05;241m"
-export COLOR_YELLOW="\[\033[0;33m\]"
+export COLOR_YELLOW="\033[0;33m"
 
 # less settings
 export PAGER=less
@@ -115,6 +115,7 @@ todo
 ##################################### prompt ##################################
 ###############################################################################
 
+#PS1="\[$DIRECTORY_COLOR\]\w \[$GIT_COLOR\]\$(parse_git_branch)\[$STAGED_COLOR\]\$(gitstaged)\[$MODIFIED_COLOR\]\$(gitmodified)\[$UNTRACKED_COLOR\]\$(gituntracked)\[$RESET_COLOR\]\n\[$USER_COLOR\]\u\[$RESET_COLOR\]@\[$HOST_COLOR\]\h\[$PROMPT_COLOR\]→ \[$RESET_COLOR\]"
 PS1="\n\[$DIRECTORY_COLOR\]\w \[$GIT_COLOR\]\$(parse_git_branch)\[$STAGED_COLOR\]\$(gitstaged)\[$MODIFIED_COLOR\]\$(gitmodified)\[$UNTRACKED_COLOR\]\$(gituntracked)\[$RESET_COLOR\]\n\[$COLOR_GREEN\]\u\[$RESET_COLOR\]@\[$COLOR_GRAY\]\h\[$COLOR_YELLOW\] \! \[$PROMPT_COLOR\]\@ $ \[$RESET_COLOR\]"
 
 ###############################################################################
