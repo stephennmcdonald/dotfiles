@@ -85,6 +85,8 @@ alias gd="bundle exec guard"
 alias t='tmux attach || tmux new'
 alias ct='ctags -R -f .tags'
 alias status='gittreestatus ~/Sites/Git'
+alias ts='tmux-session save'
+alias tr='tmux-session restore'
 
 # various
 alias mytop='top -s1 -o cpu -R -F'
