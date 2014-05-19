@@ -8,6 +8,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+alias h="cd ~"
 
 # aliases to default commands with certain switches
 alias grep='grep --color=auto'
