@@ -1,4 +1,5 @@
 # basic shell aliases
+alias lsl="ls -l"
 alias lsd='ls -Gl | grep "^d"'
 alias lsort='echo "========== Newest ==========" && ls -At1 && echo "========== Oldest =========="'
 alias reload="source ~/.bash_profile"
