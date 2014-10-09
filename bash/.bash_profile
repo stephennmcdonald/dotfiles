@@ -62,6 +62,15 @@ PATH=${PATH}:~
 
 NODE_PATH="/usr/local/bin:/usr/local/lib/node_modules"
 
+# Amazon AWS/EC2/EB
+export JAVA_HOME=$(/usr/libexec/java_home)
+export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.1.0
+export AWS_ACCESS_KEY=AKIAJEJ4ZKIHTGCSQ2TQ
+export AWS_SECRET_KEY=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
+
+PATH=${PATH}:~/aws/elasticbeanstalk/eb/macosx/python2.7
+PATH=$PATH:$EC2_HOME/bin
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # options
