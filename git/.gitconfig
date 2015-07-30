@@ -278,3 +278,5 @@
 
 [http]
 	sslVerify = false
+[credential]
+	helper = osxkeychain
