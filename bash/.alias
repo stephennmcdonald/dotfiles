@@ -71,6 +71,7 @@ alias gb="git branch"
 alias gr="git remote"
 alias gco="git checkout"
 alias gp="git pull && git push"
+alias gpi="git pull && npm install && bower install"
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
