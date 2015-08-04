@@ -1,5 +1,6 @@
 # basic shell aliases
 alias lsl="ls -l"
+alias lsla="ls -la"
 alias lsd='ls -Gl | grep "^d"'
 alias lsort='echo "========== Newest ==========" && ls -At1 && echo "========== Oldest =========="'
 alias reload="source ~/.bash_profile"
@@ -70,6 +71,7 @@ alias gb="git branch"
 alias gr="git remote"
 alias gco="git checkout"
 alias gp="git pull && git push"
+alias gpi="git pull && npm install && bower install"
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
@@ -81,6 +83,8 @@ alias ss='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaver
 # work related
 alias edit="sublime ."
 alias work="cd ~/Sites/Git && ls -ld */"
+alias boco="cd ~/Sites/Git/Boco && ls -ld */"
+alias crtd="cd ~/Sites/Git/CRTD && ls -ld */"
 #alias work="cd ~/Sites/Git && ls -ld */ | awk '{print(\$10)}'"
 alias gd="bundle exec guard"
 alias t='tmux attach || tmux new'
