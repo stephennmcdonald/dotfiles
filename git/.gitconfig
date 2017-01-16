@@ -1,10 +1,9 @@
-[user]
-	name = Stephen McDonald
-	email = stephennmcdonald@gmail.com
 [core]
 	whitespace = trailing-space, space-before-tab
 	excludesfile = ~/.gitignore_global
 	editor = sublime -n -w
+	autocrlf = input
+	safecrlf = false
 [color]
 	diff = auto
 	status = auto
@@ -282,3 +281,8 @@
 	up = "!git remote update -p; git merge --ff-only @{u}"
 
 
+[user]
+	email = stephen.mcdonald@bocodigital.com
+	name = Stephen McDonald
+[merge "ours"]
+	driver = true
