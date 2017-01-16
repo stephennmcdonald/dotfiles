@@ -286,3 +286,5 @@
 	name = Stephen McDonald
 [merge "ours"]
 	driver = true
+[git-up "rebase"]
+	auto = false
