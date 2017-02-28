@@ -72,6 +72,9 @@ alias gr="git remote"
 alias gco="git checkout"
 alias gp="git pull && git push"
 alias gpi="git pull && npm install && bower install"
+alias ghead="git reset --hard HEAD"
+alias go="git flow init -d && npm install && edit"
+alias pushmaster="git checkout master && git pull && git merge develop && git push && git checkout develop"
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
